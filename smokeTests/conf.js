@@ -4,7 +4,7 @@ exports.config = {
       'browserName': 'chrome'
       },
     framework: 'jasmine',
-    specs: ['./specs/menuCheck.spec.js'],
+    specs: ['./specs/home.spec.js'],
     jasmineNodeOpts: {
       defaultTimeoutInterval: 30000
     }

@@ -1,7 +1,7 @@
 var HomePage = require('../pages/HomePage');
 
 
-describe('Load home page and check menu buttons', function() { 
+describe('Load home page and check essential sections', function() { 
 
   it('should load home page', function() { 
     browser.waitForAngularEnabled(false);
@@ -18,8 +18,10 @@ describe('Load home page and check menu buttons', function() {
     expect(HomePage.isAboutLabelVisible()).toBe(true);
   })
 
-  it('should check that Timeline label is visible', function() { 
+  it('should check that Timeline is visible', function() { 
     expect(HomePage.isTimeLineVisible()).toBe(true);
   })
+
+  //TODO: add contact section tests
 
 });
