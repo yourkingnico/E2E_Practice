@@ -9,7 +9,7 @@ install jasmine locally $npm i --save -dev jasmine
 
 Using web-driver 3.8
 
-$ webdriver-manager clean
+$ webdriver-manager clean,
 $ webdriver-manager update --standalone --versions.standalone=3.8.0
 
 To Run a Test conf 
