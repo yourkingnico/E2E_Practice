@@ -1,0 +1,23 @@
+{
+  "name": "e2e_practice",
+  "version": "1.0.0",
+  "description": "auto testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "smoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourkingnico/E2E_Practice.git"
+  },
+  "author": "Nick Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yourkingnico/E2E_Practice/issues"
+  },
+  "homepage": "https://github.com/yourkingnico/E2E_Practice#readme",
+  "dependencies": {
+    "jasmine": "^3.4.0",
+    "protractor": "^5.4.2"
+  }
+}
