@@ -18,10 +18,12 @@ describe('Load home page and check essential sections', function() {
     expect(HomePage.isAboutLabelVisible()).toBe(true);
   })
 
-  it('should check that Timeline is visible', function() { 
+  it('should check that Timeline section is visible', function() { 
     expect(HomePage.isTimeLineVisible()).toBe(true);
   })
 
-  //TODO: add contact section tests
+  it('should check that Contact section is visible', function() { 
+    expect(HomePage.isContactSectionVisible()).toBe(true);
+  })
 
 });

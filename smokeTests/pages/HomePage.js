@@ -1,4 +1,5 @@
 var TimeLine = require('../pages/sections/Timeline');
+var Contact = require('./sections/Contact');
 
 var HomePage = function(){
     var menu =  element(by.css('.navbar-nav'));
@@ -26,6 +27,13 @@ var HomePage = function(){
 
     this.isTimeLineVisible = function () {
         return TimeLine.isTimelineVisible() && TimeLine.isTimelineLabelVisible();
+    }
+
+    this.isContactSectionVisible = function () {
+        return Contact.isContactLabelVisible() && 
+        Contact.isEmailLinkVisible() && 
+        Contact.isLinkedinLinkVisible() &&
+        Contact.isGithubLinkVisible();
     }
 }
 module.exports = new HomePage();
