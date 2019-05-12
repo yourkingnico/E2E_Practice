@@ -40,5 +40,9 @@ var HomePage = function(){
     this.isCopyrightVisible = function () {
         return copyrightLabel.isDisplayed();
     }
+
+    this.isMenuNavigatable = function () {
+        return Menu.isMenuNavigatable();
+    }
 }
 module.exports = new HomePage();

@@ -29,4 +29,8 @@ describe('Load home page and check essential sections', function() {
     expect(HomePage.isCopyrightVisible()).toBe(true);
   })
 
+  it('should check that menu links work', function() { 
+    expect(HomePage.isMenuNavigatable()).toBe(true);
+  })
+
 });
