@@ -7,6 +7,7 @@ var HomePage = function(){
     var homeButton = element(by.css('.navbar-brand'));
     var introText = element(by.css('.intro-text'));
     var aboutLabel = element(by.css('h2.home-titles:not(:first-child)'));
+    var copyrightLabel = element(by.css('#copyright'));
 
     this.isMenuVisible = function () {
         console.log("Looking for Menu");
@@ -34,6 +35,10 @@ var HomePage = function(){
         Contact.isEmailLinkVisible() && 
         Contact.isLinkedinLinkVisible() &&
         Contact.isGithubLinkVisible();
+    }
+
+    this.isCopyrightVisible = function () {
+        return copyrightLabel.isDisplayed();
     }
 }
 module.exports = new HomePage();

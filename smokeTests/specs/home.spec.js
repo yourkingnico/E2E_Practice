@@ -1,6 +1,5 @@
 var HomePage = require('../pages/HomePage');
 
-
 describe('Load home page and check essential sections', function() { 
 
   it('should load home page', function() { 
@@ -26,7 +25,8 @@ describe('Load home page and check essential sections', function() {
     expect(HomePage.isContactSectionVisible()).toBe(true);
   })
 
-  //TODO add copyright section
-  //TODO add menu section
+  it('should check that copyright label is visible', function() { 
+    expect(HomePage.isCopyrightVisible()).toBe(true);
+  })
 
 });
