@@ -1,5 +1,6 @@
 var TimeLine = require('../pages/sections/Timeline');
 var Contact = require('./sections/Contact');
+var Menu = require('./sections/Menu');
 
 var HomePage = function(){
     var menu =  element(by.css('.navbar-nav'));
@@ -7,10 +8,9 @@ var HomePage = function(){
     var introText = element(by.css('.intro-text'));
     var aboutLabel = element(by.css('h2.home-titles:not(:first-child)'));
 
-
     this.isMenuVisible = function () {
         console.log("Looking for Menu");
-        return menu.isDisplayed();
+        return menu.isDisplayed() && Menu.isMenuVisible();
     }
 
     this.isHomeButtonVisible = function () {

@@ -26,4 +26,7 @@ describe('Load home page and check essential sections', function() {
     expect(HomePage.isContactSectionVisible()).toBe(true);
   })
 
+  //TODO add copyright section
+  //TODO add menu section
+
 });
