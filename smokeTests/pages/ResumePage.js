@@ -13,7 +13,7 @@ var ResumePage = function(){
         var fs = require('fs');
       
         if (fs.existsSync(filename)) {
-            //check to rename the download?
+            //check if file with same name is present?
             fs.unlinkSync(filename);
         }
         downloadButton.click();
