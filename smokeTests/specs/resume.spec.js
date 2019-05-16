@@ -13,4 +13,11 @@ describe('Load resume page and check for download', function() {
     expect(Menu.openResumePage()).toBeTruthy();
   })
 
+  it('should verify download button is visible', function() { 
+    expect(ResumePage.isDownloadButtonVisible()).toBeTruthy();
+  })
+
+  it('should verify resume isDownloadable', function() { 
+    expect(ResumePage.isResumeDownloadable()).toBe(true);
+  })
 });
