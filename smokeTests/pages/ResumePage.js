@@ -1,15 +1,13 @@
 var ResumePage = function(){
+
     var downloadButton =  element(by.css('#download-button button'));
+
     this.isDownloadButtonVisible = function () {
         return downloadButton.isDisplayed();
     }
 
     this.isResumeDownloadable = function () {
         var filename = 'resume.pdf';
-        return this.canResumeDownload(filename);
-    }
-
-    this.canResumeDownload = function (filename) {
         var fs = require('fs');
       
         if (fs.existsSync(filename)) {
@@ -19,7 +17,7 @@ var ResumePage = function(){
         downloadButton.click();
         console.log("Checking if " + filename + " exists...")
         exists = browser.driver.wait(function() {
-          // Wait until the file has been downloaded.
+          // Wait until the file has been downloaded
           return fs.existsSync(filename);
         }, 30000).catch(function(error) {
           console.log("File not found: ", error);
