@@ -17,9 +17,7 @@ var PortfolioPage = function(){
     }
 
     this.areProjectsShown = function () {
-        return this.isHonorsCollegeSectionVisible() && 
-        this.isRadioSectionVisible() && 
-        this.isPortfolioLabelVisible();
+        return this.isHonorsCollegeSectionVisible() && this.isRadioSectionVisible();
     }
 }
 module.exports = new PortfolioPage();

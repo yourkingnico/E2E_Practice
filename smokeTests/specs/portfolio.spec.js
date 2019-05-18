@@ -1,7 +1,7 @@
 var PortfolioPage = require('../pages/PortfolioPage');
 var Menu = require('../pages/sections/Menu');
 
-describe('Load portfolio page and check for essential ', function() { 
+describe('Load portfolio page and check for essential pieces', function() { 
 
   it('should load home page', function() { 
     browser.waitForAngularEnabled(false);
@@ -9,7 +9,7 @@ describe('Load portfolio page and check for essential ', function() {
     console.log("Home page loaded for nicktorres.net");
   })
 
-  it('should naviagate the the portfolio page', function() { 
+  it('should navigate to the portfolio page', function() { 
     expect(Menu.openPortfolioPage()).toBeTruthy();
   })
 
