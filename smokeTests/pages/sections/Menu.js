@@ -45,5 +45,11 @@ var Menu = function(){
         expect(browser.getCurrentUrl()).toContain('nicktorres.net/nicks_site/html/resume.html');
         return true;
     }
+
+    this.openPortfolioPage = function() {
+        portfolioLink.click();
+        expect(browser.getCurrentUrl()).toContain('nicktorres.net/nicks_site/html/portfolio.html');
+        return true;
+    }
 }
 module.exports = new Menu();
