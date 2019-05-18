@@ -16,4 +16,8 @@ describe('Load portfolio page and check for essential ', function() {
   it('should verify portfolio label is visible', function() { 
     expect(PortfolioPage.isPortfolioLabelVisible()).toBeTruthy();
   })
+
+  it('should verify portfolio sections are shown', function() { 
+    expect(PortfolioPage.areProjectsShown()).toBeTruthy();
+  })
 });
