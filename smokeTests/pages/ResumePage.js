@@ -14,8 +14,11 @@ var ResumePage = function(){
             //check if file with same name is present?
             fs.unlinkSync(filename);
         }
+
         downloadButton.click();
+
         console.log("Checking if " + filename + " exists...")
+        
         exists = browser.driver.wait(function() {
           // Wait until the file has been downloaded
           return fs.existsSync(filename);
