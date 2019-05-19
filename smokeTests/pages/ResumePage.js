@@ -17,8 +17,8 @@ var ResumePage = function(){
 
         downloadButton.click();
 
-        console.log("Checking if " + filename + " exists...")
-        
+        console.log("Checking if " + filename + " exists...");
+
         exists = browser.driver.wait(function() {
           // Wait until the file has been downloaded
           return fs.existsSync(filename);
@@ -26,8 +26,8 @@ var ResumePage = function(){
           console.log("File not found: ", error);
           return false;
         });
-    
-        return  Promise.resolve(exists);
+
+        return exists;
     }
 }
 module.exports = new ResumePage();

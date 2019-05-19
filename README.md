@@ -1,5 +1,5 @@
 # E2E_Practice
-Practicing E2E tests
+A quick and simple tool to help me verify I deployed correctly...
 
 requires node.js
 
